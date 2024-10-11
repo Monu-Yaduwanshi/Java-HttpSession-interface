@@ -39,32 +39,3 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
-//package com.service;
-//
-//import java.io.IOException;
-//import jakarta.servlet.ServletException;
-//import jakarta.servlet.http.HttpServlet;
-//import jakarta.servlet.http.HttpServletRequest;
-//import jakarta.servlet.http.HttpServletResponse;
-//import jakarta.servlet.http.HttpSession;
-//
-//public class ServletLogin extends HttpServlet {
-//    private static final long serialVersionUID = 1L;
-//
-//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        String username = request.getParameter("Username");
-//        String password = request.getParameter("Password");
-//
-//        String hardcodedUsername = "Monu";
-//        String hardcodedPassword = "pass";
-//
-//        if (username.equals(hardcodedUsername) && password.equals(hardcodedPassword)) {
-//            HttpSession session = request.getSession();
-//            session.setAttribute("username", username);
-//            response.sendRedirect("ServletProfile");
-//        } else {
-//            response.setContentType("text/html");
-//            response.getWriter().println("Invalid username or password");
-//        }
-//    }
-//}
